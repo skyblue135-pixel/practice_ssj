@@ -1,0 +1,69 @@
+.board-section {
+  background-color: var(--canvas);
+  color: var(--ink);
+  padding: var(--space-3xl);
+}
+
+.board-eyebrow {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 19.5px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--body-mid);
+  margin: 0 0 var(--space-md);
+}
+
+.board-headline {
+  font-size: 44.8px;
+  font-weight: 600;
+  line-height: 46.6px;
+  margin: 0 0 var(--space-2xl);
+}
+
+.board-card {
+  border: 1px solid var(--hairline);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+.board-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.board-table thead th {
+  text-align: left;
+  font-size: 12.8px;
+  font-weight: 550;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  color: var(--body-mid);
+  background-color: var(--canvas);
+  padding: var(--space-md) var(--space-lg);
+  border-bottom: 1px solid var(--hairline);
+}
+
+.board-table tbody td {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22.4px;
+  color: var(--body);
+  padding: var(--space-md) var(--space-lg);
+  border-bottom: 1px solid var(--hairline);
+}
+
+.board-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.col-id { width: 64px; color: var(--mute); }
+.col-title { color: var(--ink); font-weight: 500; }
+.col-author { width: 120px; }
+.col-date { width: 120px; color: var(--body-mid); }
+.col-views { width: 90px; color: var(--body-mid); }
+
+@media (max-width: 767px) {
+  .board-section { padding: var(--space-2xl) var(--space-lg); }
+  .col-author, .col-date, .col-views { display: none; }
+}
